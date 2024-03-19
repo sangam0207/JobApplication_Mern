@@ -18,7 +18,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:8080/api/v1/user/login",
+        "https://jobapplication-mern-1.onrender.com/api/v1/user/login",
         { email, password, role },
         {
           headers: {
